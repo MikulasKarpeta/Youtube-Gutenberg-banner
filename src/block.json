@@ -1,0 +1,70 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "minimalio-blocks/minimalio-youtube-banner",
+	"version": "1.0.0",
+	"title": "Youtube Banner - Minimalio",
+	"category": "media",
+	"icon": "youtube",
+	"description": "A Full width youtube video banner",
+	"example": {},
+	"attributes": {
+		"video": {
+			"type": "string",
+			"default": ""
+		  },
+		  "aspect": {
+			"type": "string",
+			"default": "16-9"
+		  },
+		  "autoplay": {
+			"type": "boolean",
+			"default": true
+		  },
+		  "controls": {
+			"type": "boolean",
+			"default": true
+		  },
+		  "controlsColor": {
+			"type": "string",
+			"default": "#fff"
+		  },
+		  "width": {
+			"type": "string",
+			"default": "container"
+		  },
+		  "height": {
+			"type": "string",
+			"default": "full"
+		  },
+		  "mobile": {
+			"type": "boolean",
+			"default": false
+		  },
+		  "heightMobile": {
+			"type": "string",
+			"default": "80"
+		  },
+		  "heightTablet": {
+			"type": "string",
+			"default": "80"
+		  },
+		  "heightDesktop": {
+			"type": "string",
+			"default": "80"
+		  },
+		  "images": {
+			"type": "object",
+			"selector": "js-book-details-image",
+			"default": {}
+		  }
+		},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "my-first-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./youtube-banner-view.js"
+}
